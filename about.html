@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quimn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/quimnlogowhite.png">
+    <script src="https://kit.fontawesome.com/94c6583cfa.js" crossorigin="anonymous"></script>
+
+</head>
+    <body style="font-family: Cholla-reg">
+        <div class="header">
+            <div class="mobile">
+                <h1><a href="index.html"><img src="images/quimnlogo.png" alt="Quimn logo symbol"></a></h1>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                    <ul class="sidebarMenuInner">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="drop" onclick="toggleSubMenu(this)">Events <i class="fa fa-angle-down" style="font-size:10px;"></i>
+                            <ul>
+                                <li><a uk-scroll href="events.html#section1">Upcoming Events</a></li>
+                                <li><a uk-scroll href="events.html#section2">Past Events</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="desktop"><a href="index.html"><img src="images/quimnnamelogo.png" alt="Quimn logo name"></a></h1>
+            <div class="contain">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="drop"><a href="events.html">Events <i class="fa fa-angle-down" style="font-size:10px;"></i></a>
+                        <ul>
+                            <li><a href="events.html#section1">Upcoming Events</a></li>
+                            <li><a href="events.html#section2">Past Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero2">
+            <div class="hero-inner2">
+                <h1>What is Quimn?</h1>
+                <img class="deskabout" src="images/aboutustrio.png" alt="blobs">
+                <div class="mobabout">
+                    <div class="def">
+                        <img src="images/definition.png">
+                    </div>
+                    <div class="mission">
+                        <img src="images/mission.png">
+                    </div>
+                    <div class="pictus">
+                        <img src="images/us_sitting.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="images/quimnlogo3d.png" alt="3d logo footer">
+        </div>
+
+        <script src="effects.js"></script>
+    </body>
+</html>
