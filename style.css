@@ -3,6 +3,8 @@ body, html {
     background-image: url("images/Quim_bg_gradient.jpg");
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     background-size: cover;
     padding: 0px;
@@ -28,6 +30,8 @@ body, html {
     font-family: 'Cholla-bold';
     src: url('fonts/ChollaSans\ Bold.otf') format('opentype');
   }
+
+/* -- HEADER -- */
 
   .mobile {
     display: none;
@@ -123,17 +127,46 @@ body, html {
       transform: translate(-50%, 0);
   }
     
+
+/* -- FOOTER -- */ 
 .footer {
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .footer img {
   width: 20px;
 }
 
+.footer .logofoot img {
+  width: 15px;
+}
+
+.footer li {
+  margin: 0px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.social a {
+  color: #30039A;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.social a:hover {
+  transform: scale(1.15);
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* -- HOME PAGE -- */
 
@@ -483,6 +516,9 @@ margin: 0px;
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 padding: 0px;
 overflow-x: hidden;
 } 
@@ -507,25 +543,10 @@ overflow-x: hidden;
   font-size: 1.5rem;
 }
 
-
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -60px; 
-}
-
 .header .desktop {
   display: none;
 }
 
-.footer, .page-wrap:after {
-  height: 60px; 
-}
-
-.footer {
-  position: relative;
-}
 
 .mobile {
   display: block;
